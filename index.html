@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- TODO: add this back. -->
+<!--<html lang="en">-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    
+
+    <body>
+        <!-- TODO: make the logos white! -->
+        <!-- TODO: why is the linkedin logo upside down on Safari only?-->
+        <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-deepblue text-white">
+            <div class="navbar-brand me-auto ms-2">
+                <a href="https://github.com/yuji3w">
+                    <img src="assets/img/github-logo.png" alt="GitHub logo"
+                    width=30 id="github-logo">
+                </a>
+                <a href="https://www.linkedin.com/in/yuji3w/">
+                    <img src="assets/img/linkedin-logo.png" alt="Linkedin logo"
+                    width=30 id="linkedin-logo">
+                </a>
+            </div>
+
+            <!-- TODO: make this menu a drop down, maybe when resized-->
+            
+            <a class="nav-link ms-auto active" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link d-none d-md-block justify-content-end" href="#experience-showcase-section">Experience</a>
+            <a class="nav-link d-none d-lg-block justify-content-end" href="#extracurriculars-showcase-section">Extracurriculars</a>
+            <a class="nav-link mr-1 d-none d-lg-block justify-content-end" href="about.html#contact">Contact</a>
+        </nav>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center mt-5 mb-5 form-group">
+                <div class="offset-md-1 col-auto" id="headline-img-div">
+                    <div>
+                        <img src="assets/img/profile-pic.png" alt="Profile picture of Yujie Wang"
+                        class="img-responsive img-thumbnail" id="headline-img">
+                    </div>
+                </div>
+                <div class="col-4 ms-3">
+                    <div class="text-blue ps-3 border-start rounded-start border-5 border-deepblue" id="headline-text-div">
+                        Hi, I'm Yujie. <br>
+                        I'm a software engineer.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            
+            <div class="title row justify-content-center
+            border-bottom border-5 bottom-border border-deepblue mb-3">
+                <div class="col-auto mt-5">
+                    <h2 class="text-blue">Experience</h2>
+                </div>
+            </div>
+
+            <div class="showcase-section" id="experience-showcase-section">
+                <div class="placeholder-card-selector" data-image-src="assets/img/amazon-logo.svg">
+                    <div class="placeholder-card-body">
+                        <h5 class="placeholder-card-title">
+                            Payments Development: Amazon
+                            <br> May 2021 ‐ Aug. 2021
+                        </h5>
+                        <p class="placeholder-card-contents">
+                            Designed, implemented, used production code (Java) for migrating payments encryption in all established regions.
+                            <br>Migrated all in‐scope payments processors in a manual migration, covering >50% of all live disbursements traffic.
+                            <br>Migration plan covers >60% of all live payments traffic and aligns with initiatives to mitigate SDE effort and damage.
+                            <br>Implemented secure Elasticsearch dual publishing of payments data for improving CI/CD speed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="placeholder-card-selector" data-image-src="assets/img/genes-in-space.jpg">
+                    <div class="placeholder-card-body">
+                        <h5 class="placeholder-card-title">
+                            Computational Research: Genes in Space (Boeing, NASA, MiniPCR)
+                            <br> May 2019 ‐ Jan. 2021
+                        </h5>
+                        <p class="placeholder-card-contents">
+                            Pioneered computational genetics experiment that launched aboard SpaceX Dragon and conducted on the International Space Station.
+                            <br>Proposed, developed procedures for mapping changes to the neural transcriptome in space using long‐read sequencing.
+                            <br>Validated predictive models for use with neural tissue that will help develop astronaut health measurement tools.
+                            <br>Analyzed potential changes in gene expression in spaceflight, helping to determine causes of neural change in space.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="placeholder-card-selector" data-image-src="assets/img/bioinformatics-journal.png">
+                    <div class="placeholder-card-body">
+                        <h5 class="placeholder-card-title">
+                            Bioinformatics Research: University of California, Berkeley
+                            <br> Aug. 2019 ‐ Aug. 2019
+                        </h5>
+                        <p class="placeholder-card-contents">
+                            Second author of https://doi.org/10.1093/bioinformatics/btaa633. under the journal Bioinformatics
+                            <br>Created indel‐detecting state machines for Machine Boss, a Bioinformatic Automata prototyper that can be used in genomics analysis.
+                            <br>Project implements a set of operations for manipulating and combining automata to make the prototyping of bioinformatics HMMs easier.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title row justify-content-center
+            border-bottom border-5 bottom-border border-deepblue mb-3">
+                <div class="col-auto mt-5">
+                    <h2 class="text-blue">Extracurriculars</h2>
+                </div>
+            </div>
+
+            <div class="showcase-section" id="extracurriculars-showcase-section">
+                <!-- The design pattern here is to take the first element and duplicate it, filling in content with
+                     later placeholders. TODO: replace with all placeholders. -->
+                <div class="card-selector card-height parallax-window mt-2 mb-4 py-5 border border-2 border-deepblue d-flex justify-content-center align-items-end"
+                data-parallax="scroll" data-image-src="assets/img/grotech.png" data-position-y="-200px" data-speed="0.8"
+                ios-fix="true" android-fix="true">
+                    <div class="col-auto card showcase-card p-5 mb-2 py-2 m-5 w-90 h-50 text-white bg-deepblue-faded overflow-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                SeedShuttle, Team Lead
+                            </h5>
+                            <p class="card-contents">
+                                Constructed automated plant chamber for space station, won first in NASA’s Growing Beyond Earth competition.
+                                <br> Increased efficiency in volume usage by 300% over current conventional growth solutions by using automation.
+                                <br> Implemented data collection (C++), automated uploads, processed data (Python), and built thermal regulation circuit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="placeholder-card-selector" data-image-src="assets/img/mlab-landing.png">
+                    <div class="placeholder-card-body">
+                        <h5 class="placeholder-card-title">
+                            Machine Learning at Berkeley, Project Member
+                        </h5>
+                        <p class="placeholder-card-contents">
+                            Extended established machine learning architectures, including rotation and super resolution networks.
+                            <br> Decreased required train time by developing reinforcement learning and computer vision architectures specific to theoretical tasks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="placeholder-card-selector" data-image-src="assets/img/bmt.jpeg">
+                    <div class="placeholder-card-body">
+                        <h5 class="placeholder-card-title">
+                            <a class="link-light" href="https://bmt.berkeley.edu/home/">Berkeley Math</a>
+                            and
+                            <a class="link-light" href="https://dev-hkn.eecs.berkeley.edu">IEEE-HKN</a>, Developer
+                        </h5>
+                        <p class="placeholder-card-contents">
+                            Created dynamic check‐in page using Python Django and HTML, streamlining payments and parental consent forms.
+                            <br>Prototyped API to generate math contest questions for integration with an educational technology company.
+                            <br>Created interface to easily add and remove sponsors from website front page, replaced static photo gallery backend.
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/parallax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+<!--</html>-->

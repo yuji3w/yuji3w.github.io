@@ -1,0 +1,43 @@
+.navbar .nav-link{
+    color: white;
+}
+
+.bg-deepblue {
+    background-color: #4072A2;
+}
+
+.bg-deepblue-faded {
+    background-color: rgba(42, 76, 107, 0.85);
+}
+
+.border-deepblue {
+    border-color: #4072A2 !important;
+}
+
+.bottom-border {
+    border-bottom-style: dashed !important;
+}
+
+.text-blue {
+    color: #4072A2;
+}
+
+#headline-text-div {
+    font: roboto;
+    font-size: calc(50% + 3vw);
+    /* font-size needs to be mobile supported as well */
+}
+
+.mw-50 {
+    max-width: 50;
+    /* Probably error with import of bootstrap. */
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.card-height {
+    height: 500px;
+    align-items: flex-end;
+}
