@@ -5,10 +5,17 @@ function convertPlaceholdersInSection(placeholderSelector, sectionSelector){
         const itemContents = $(".placeholder-card-contents", item);
         const itemImageSrc = $(item).attr("data-image-src");
 
+        let is_mobile = false;
+        if(window.matchMedia("(max-width: 767px)").matches) {
+            is_mobile = true;
+        }
 
+        /**
+         * TODO: set ternary for data-position-y to custom for each dummy html element.
+         *  */
         let newCard = `
             <div class="card-height parallax-window mt-2 mb-4 py-5 border border-2 border-deepblue d-flex justify-content-center align-items-end"
-            data-parallax="scroll" data-image-src= ${ itemImageSrc } data-position-y="-200px" data-speed="0.8"
+            data-parallax="scroll" data-image-src= ${ itemImageSrc } data-position-y="${ is_mobile ? '-0px' : '-200px' }px" data-speed="0.8"
             ios-fix="true" android-fix="true">
                 <div class="col-auto card showcase-card p-5 mb-2 py-2 m-5 w-90 h-50 text-white bg-deepblue-faded overflow-auto">
                     <div class="card-body">
